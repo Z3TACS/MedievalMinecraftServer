@@ -1,0 +1,84 @@
+{
+	id: "1CF65D6371AA2203"
+	group: "59C90AA1B128306B"
+	order_index: 2
+	filename: "mine_cells"
+	title: " &4Mine Cells"
+	icon: {
+		id: "ftbquests:custom_icon"
+		Count: 1b
+		tag: {
+			Icon: "minecells:textures/mob_effect/cursed.png"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Visit the &8Prison &rDimension"
+			x: 0.5d
+			y: 0.5d
+			subtitle: "The portal to the &8Prison &rdimension spawns randomly throughout the &aOverworld&r. If you have, at any point, been in possession of a &bdiamond&r, the portal will already be activated."
+			id: "79FA9140695A02C0"
+			tasks: [{
+				id: "1B45ED7E7358543E"
+				type: "dimension"
+				icon: "minecraft:cobblestone"
+				dimension: "minecells:prison"
+			}]
+			rewards: [{
+				id: "034A43F3D26FDDD4"
+				type: "item"
+				item: "minecells:health_flask"
+			}]
+		}
+		{
+			title: "Defeat &dConjunctivius"
+			x: 2.0d
+			y: 0.5d
+			subtitle: "Spawns in &1The Lair&r, which can be found underground in the &8Prison &rdimension. To deal damage to the &dConjunctivius&r, you must first kill the tentacles. Can drop the &4&lCursed Sword&r, which gives you the &4Cursed &reffect when held. Don't use this sword in Hardcore ;)"
+			dependencies: ["79FA9140695A02C0"]
+			id: "678B2562584E24EF"
+			tasks: [{
+				id: "34A86CD084A8B298"
+				type: "kill"
+				title: "Defeat Conjunctivius"
+				icon: {
+					id: "minecells:tentacle"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecells:conjunctivius"
+				value: 1L
+			}]
+			rewards: [{
+				id: "4148F0D9C8D784F4"
+				type: "item"
+				item: "alloy_forgery:prismarine_bricks_forge_controller"
+			}]
+		}
+		{
+			title: "Craft 2 &7Elevator Assemblers"
+			x: 0.5d
+			y: 2.0d
+			subtitle: "To create an &8Elevator&r, first clear out a 3x3 area of any height. Then, place chains on either side of the shaft. Place the &8Elevator Assemblers &ron at the heights you want the &8Elevator &rto go to. The &8Elevator &rcan be activated via &4redstone &ror by right clicking. Make sure the chain goes above the top &8Elevator &rand chains surround both sides."
+			dependencies: ["79FA9140695A02C0"]
+			id: "4EE0E9381F12E9E1"
+			tasks: [{
+				id: "40F83D5C1C42CF08"
+				type: "item"
+				item: "minecells:elevator_assembler"
+				count: 2L
+			}]
+			rewards: [{
+				id: "719FAB3F9EE90599"
+				type: "item"
+				item: "minecraft:chain"
+				count: 16
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,12 @@
+{
+	id: "7A2F6B971920BDB3"
+	group: "59C90AA1B128306B"
+	order_index: 3
+	filename: "the_bumblezone"
+	title: " &6The Bumblezone"
+	icon: "minecraft:honeycomb"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

@@ -1,0 +1,12 @@
+{
+	id: "67F771C65C1E682B"
+	group: "3C993182D3E6754B"
+	order_index: 1
+	filename: "eexploration"
+	title: " &eExploration"
+	icon: "minecraft:compass"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

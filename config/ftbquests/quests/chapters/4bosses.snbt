@@ -1,0 +1,727 @@
+{
+	id: "0AD594F6E12A4FB2"
+	group: "3C993182D3E6754B"
+	order_index: 0
+	filename: "4bosses"
+	title: " &4Mobs"
+	icon: {
+		id: "minecraft:iron_sword"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Kill a &9Shaman"
+			x: -3.5d
+			y: 0.0d
+			subtitle: "Found in &2swamps&r."
+			id: "668F2294E7893BD9"
+			tasks: [{
+				id: "724E11F55E7B0A6E"
+				type: "kill"
+				title: "Kill a Shaman"
+				icon: {
+					id: "minecraft:trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "adventurez:shaman"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "43A0C7763885AE9C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "1A7660B6B2F10787"
+					type: "item"
+					item: "bettertridents:trident_fragment"
+				}
+			]
+		}
+		{
+			title: "Kill a &6Mammoth"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Found in &bcold &rbiomes."
+			id: "1C7E9580565509D2"
+			tasks: [{
+				id: "01C2EFC344021C4C"
+				type: "kill"
+				title: "Kill a Mammoth"
+				icon: "adventurez:mammoth_tusk"
+				entity: "adventurez:mammoth"
+				value: 1L
+			}]
+			rewards: [{
+				id: "2B74B30060206BF0"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Kill a &eDesert Rhino"
+			x: -0.5d
+			y: 0.0d
+			subtitle: "Found in &edeserts&r."
+			id: "128D2885B2B4AE7E"
+			tasks: [{
+				id: "1841F40D9B6D5AD6"
+				type: "kill"
+				title: "Kill a Desert Rhino"
+				icon: "adventurez:rhino_leather"
+				entity: "adventurez:desert_rhino"
+				value: 1L
+			}]
+			rewards: [{
+				id: "602A9DF87C22C59D"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Craft the &8&lBook of Shadows"
+			x: 3.5d
+			y: 1.5d
+			subtitle: "&3Mandrake Seeds&r, which drops from destroying grass, grows into &3Mandrake Roots &rwhen planted."
+			size: 1.5d
+			id: "79E0B6FA628D02E0"
+			tasks: [{
+				id: "770A2015CA927C85"
+				type: "item"
+				item: "bewitchment:book_of_shadows"
+			}]
+			rewards: [{
+				id: "5389BDF4AFFB0EC1"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			subtitle: "Use the &8&lBook of Shadows &rfor more info"
+			dependencies: ["79E0B6FA628D02E0"]
+			id: "48B7753F178E8B98"
+			tasks: [{
+				id: "73DB0F0E633B71DC"
+				type: "kill"
+				title: "Kill a Demon"
+				icon: "bewitchment:demon_heart"
+				entity: "bewitchment:demon"
+				value: 1L
+			}]
+			rewards: [{
+				id: "622F9B7F2B8D8C08"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			subtitle: "Use the &8&lBook of Shadows &rfor more info"
+			dependencies: ["79E0B6FA628D02E0"]
+			id: "5B60E2F23ABB67B4"
+			tasks: [{
+				id: "36B04C139BE46322"
+				type: "kill"
+				title: "Kill a Beelzebub"
+				icon: "bewitchment:demon_heart"
+				entity: "besmirchment:beelzebub"
+				value: 1L
+			}]
+			rewards: [{
+				id: "4CC4D714E21ABB2F"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			subtitle: "Use the &8&lBook of Shadows &rfor more info"
+			dependencies: ["79E0B6FA628D02E0"]
+			id: "06F68A7AF4C03524"
+			tasks: [{
+				id: "654E4AAE49D53B2A"
+				type: "kill"
+				title: "Kill a Baphomet"
+				icon: "bewitchment:demon_heart"
+				entity: "bewitchment:baphomet"
+				value: 1L
+			}]
+			rewards: [{
+				id: "452197CFB214C920"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			subtitle: "Use the &8&lBook of Shadows &rfor more info"
+			dependencies: ["79E0B6FA628D02E0"]
+			id: "2807C094857B8A91"
+			tasks: [{
+				id: "7F5279B4634C50A5"
+				type: "kill"
+				title: "Kill a Lilith"
+				icon: "bewitchment:demon_heart"
+				entity: "bewitchment:lilith"
+				value: 1L
+			}]
+			rewards: [{
+				id: "6B14AFD183E140CD"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			subtitle: "Use the &8&lBook of Shadows &rfor more info"
+			dependencies: ["79E0B6FA628D02E0"]
+			id: "4A763DA6B96789BC"
+			tasks: [{
+				id: "4194434FB9904BCD"
+				type: "kill"
+				title: "Kill a Herne"
+				icon: "bewitchment:demon_heart"
+				entity: "bewitchment:herne"
+				value: 1L
+			}]
+			rewards: [{
+				id: "6FB8C8614A0A9B2D"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+		}
+		{
+			title: "Kill a &dAmethyst Golem"
+			x: -2.0d
+			y: 1.5d
+			subtitle: "Found underground in &damethyst geodes&r."
+			id: "2D3BD496319AD33C"
+			tasks: [{
+				id: "64CB4ECC614E2DC9"
+				type: "kill"
+				title: "Kill a Amethyst Golem"
+				icon: "minecraft:amethyst_cluster"
+				entity: "adventurez:amethyst_golem"
+				value: 1L
+			}]
+			rewards: [{
+				id: "1186EE587933BE7B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Kill a &bSummoner"
+			x: -0.5d
+			y: 1.5d
+			subtitle: "Found during &9thunderstorms&r."
+			id: "7D6D7B7DD55F344D"
+			tasks: [{
+				id: "354A89017B6C62D7"
+				type: "kill"
+				title: "Kill a Summoner"
+				icon: "minecraft:skeleton_skull"
+				entity: "adventurez:summoner"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "481650A6A644AE81"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "04CC2FFE9CA10AA3"
+					type: "item"
+					item: "archon:summoning_pedestal"
+				}
+			]
+		}
+		{
+			title: "Summon and Kill &6Ayla"
+			x: -3.5d
+			y: 1.5d
+			subtitle: "The &3Grimoire &rhas more information on the Archon mod. This can be obtained from the Tutorial quests or by crafting it."
+			id: "74AFEC7266C2EB4B"
+			tasks: [{
+				id: "3D59CFDFAC4FE062"
+				type: "kill"
+				title: "Summon and Kill Ayla"
+				icon: "archon:angelic_star"
+				entity: "archon:ayla"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "6644BB12DC8279E5"
+					type: "item"
+					item: {
+						id: "archon:heat_ranger"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1B8302FEB178CA70"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Summon and Kill &2Tar"
+			x: -3.5d
+			y: 3.0d
+			subtitle: "The &3Grimoire &rhas more information on the Archon mod. This can be obtained from the Tutorial quests or by crafting it."
+			id: "07E3267E019380D9"
+			tasks: [{
+				id: "018AD2867C49F837"
+				type: "kill"
+				title: "Summon and Kill Tar"
+				icon: "archon:terranite_stone"
+				entity: "archon:tar"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "12DC1073F66D3A0A"
+					type: "item"
+					item: {
+						id: "archon:soul_scythe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7E72CDF82AEF5385"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Defeat &4The Lich"
+			x: -1.9500000000000002d
+			y: -3.2500000000000004d
+			subtitle: "Can be spawned in the &4Lich Prison &rstructure, a large floating island above oceans. Once it is night time, place the fragments on the Corrupted Deepslate Center blocks. Then, pour the &4blood &ronto the altar in the middle."
+			dependencies: [
+				"4EF485B4BE7BC4BF"
+				"5A1817A81A4FD5C1"
+			]
+			size: 1.3d
+			id: "69D89EFBD57A17D5"
+			tasks: [{
+				id: "2424B45972B567F2"
+				type: "kill"
+				title: "Defeat the Lich"
+				icon: "graveyard:altar"
+				entity: "graveyard:lich"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "03B2F24DE198D44A"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 3
+				}
+				{
+					id: "0B46A29D4214F89B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Defeat the &bNight Lich"
+			x: -2.0d
+			y: 3.0d
+			subtitle: "Found in towers that spawn in &bcold &rbiomes."
+			id: "63D82D9074FC34E3"
+			tasks: [{
+				id: "727F7A1D307E65A9"
+				type: "kill"
+				title: "Defeat the Night Lich"
+				icon: "bosses_of_mass_destruction:ancient_anima"
+				entity: "bosses_of_mass_destruction:lich"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "37B03BE444D6331F"
+					type: "item"
+					item: "bosses_of_mass_destruction:mob_ward"
+				}
+				{
+					id: "7C048ADB6DF63093"
+					type: "item"
+					item: "bosses_of_mass_destruction:void_lily"
+				}
+				{
+					id: "6510FC5C5113401C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Collect all three &fBone Staff Fragments"
+			x: -3.5d
+			y: -3.5d
+			subtitle: "Can be found in Ruins. Each Ruin will only have one &fFragment&r."
+			id: "4EF485B4BE7BC4BF"
+			tasks: [
+				{
+					id: "2A706CD3FAB1234F"
+					type: "item"
+					item: "graveyard:upper_bone_staff"
+				}
+				{
+					id: "198DC7FFF9829D01"
+					type: "item"
+					item: "graveyard:middle_bone_staff"
+				}
+				{
+					id: "5B0A9A530ACD3602"
+					type: "item"
+					item: "graveyard:lower_bone_staff"
+				}
+			]
+			rewards: [
+				{
+					id: "7F9EF6DED6DAEDA9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "25AB22460CC2700E"
+					type: "item"
+					item: {
+						id: "graveyard:bone_dagger"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Fill a &4Vial of Blood"
+			x: -3.5d
+			y: -2.5d
+			subtitle: "Obtained by killing 8 villagers with a &fBone Dagger &rand a glass bottle in your offhand. "
+			id: "5A1817A81A4FD5C1"
+			tasks: [{
+				id: "25880E2628FA206B"
+				type: "item"
+				item: {
+					id: "graveyard:vial_of_blood"
+					Count: 1b
+					tag: {
+						Blood: 0.8000001f
+					}
+				}
+			}]
+			rewards: [{
+				id: "5015F1497322E9DD"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: -3.5d
+			y: 4.5d
+			subtitle: "Found in caves at low Y levels."
+			id: "24969D5FC76CDBB3"
+			tasks: [{
+				id: "3DB51E789F4F929F"
+				type: "kill"
+				title: "Defeat the Void Blossom"
+				icon: "bosses_of_mass_destruction:void_thorn"
+				entity: "bosses_of_mass_destruction:void_blossom"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "68DFBB0E19E00038"
+					type: "item"
+					item: {
+						id: "bosses_of_mass_destruction:earthdive_spear"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2FFD48DDB0939A9A"
+					type: "item"
+					item: "minecraft:totem_of_undying"
+				}
+				{
+					id: "2183267258371663"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Observe the &6Wise Oak"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "mysticaloaktree:textures/block/wise_oak.png"
+				}
+			}
+			x: -0.5d
+			y: 3.0d
+			subtitle: "Has over &l300 &rlines of dialogue. Gain his trust by talking to him enough. If you make him &cangry&r, you will face &4consequences&r. "
+			id: "009062C8DCDF2FCC"
+			tasks: [{
+				id: "68E72F99E8828F14"
+				type: "observation"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "mysticaloaktree:textures/block/wise_oak_butt.png"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:dirt"
+			}]
+			rewards: [{
+				id: "541075951585637A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Observe a &bSoulmass"
+			x: 2.0d
+			y: -3.0d
+			subtitle: "Summoned by the &5Soul Reaper &rwith at least 30 soul charges"
+			dependencies: ["428FABFBFA313439"]
+			id: "5F25DD96B716376D"
+			tasks: [{
+				id: "42FECE4B9C4FABDE"
+				type: "observation"
+				icon: "soulsweapons:chaos_orb"
+				timer: 0L
+				observe_type: 5
+				to_observe: "soulsweapons:soulmass"
+			}]
+			rewards: [{
+				id: "4D205A9BFC5631CF"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			title: "Craft a &5Soul Reaper"
+			x: 3.5d
+			y: -3.0d
+			subtitle: "Grants souls as you kill mobs."
+			dependencies: [
+				"7F41A7E307CD03B6"
+				"58E734F14C7BBF49"
+			]
+			id: "428FABFBFA313439"
+			tasks: [{
+				id: "04297D6FF26292BE"
+				type: "item"
+				item: {
+					id: "soulsweapons:soul_reaper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6CD5356BBB00EB1C"
+				type: "item"
+				item: "gofish:soul_crate"
+			}]
+		}
+		{
+			title: "Obtain your first &6Lord Soul"
+			x: 3.5d
+			y: -4.5d
+			subtitle: "There are several types of &6Lord Souls&r. They are all dropped by boss mobs, including &8The Wither &rand &8&lEnder Dragon&r."
+			id: "7F41A7E307CD03B6"
+			tasks: [{
+				id: "5F39846DCFDFB0F8"
+				type: "item"
+				title: "Any #soulsweapons:lord_soul"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "soulsweapons:lord_soul"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2C560C25CF5E20A2"
+				type: "item"
+				item: "soulsweapons:silver_bullet"
+				count: 64
+			}]
+		}
+		{
+			title: "Craft a &bLost Soul"
+			x: 6.5d
+			y: -3.0d
+			subtitle: "Obtained by smelting Soul Sand"
+			id: "3570276AEF733567"
+			tasks: [{
+				id: "6AC0EA4DC27BE653"
+				type: "item"
+				item: "soulsweapons:lost_soul"
+			}]
+			rewards: [{
+				id: "3384173769B75B3F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Craft a &3Soul Infused Ingot"
+			x: 5.0d
+			y: -3.0d
+			subtitle: "Crafted using a Smithing Table"
+			dependencies: ["3570276AEF733567"]
+			id: "58E734F14C7BBF49"
+			tasks: [{
+				id: "7B03B948A97182B9"
+				type: "item"
+				item: "soulsweapons:soul_ingot"
+			}]
+			rewards: [{
+				id: "59A6362778B76ACC"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Craft a &bMoonstone Compass"
+			x: 2.0d
+			y: -4.5d
+			subtitle: "Locates structures such as &8The Champion's Graves &rand &4The Decaying Kingdom&r. &bMoonstone &rcan be found at diamond level. "
+			id: "2AE60180BCEE664D"
+			tasks: [{
+				id: "0251A3CBD00A7618"
+				type: "item"
+				item: "soulsweapons:boss_compass"
+			}]
+			rewards: [{
+				id: "1569B4118195B5E0"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "goblintraders:dig_speed"
+					}
+				}
+			}]
+		}
+		{
+			title: "Defeat the &6Old Champion's Remains"
+			x: 5.0d
+			y: -4.5d
+			subtitle: "Found in the &8Old Champion's Graves&r, which can be located using the &bMoonstone Compass&r.\\"
+			dependency_requirement: "one_completed"
+			id: "2FBEA509EEA51D61"
+			tasks: [{
+				id: "536B6F053CE47F37"
+				type: "kill"
+				title: "Kill the Old Champions Remains"
+				icon: {
+					id: "soulsweapons:draugr"
+					Count: 1b
+					tag: {
+						Damage: 0
+						night: 1b
+					}
+				}
+				entity: "soulsweapons:draugr_boss"
+				value: 1L
+			}]
+			rewards: [{
+				id: "0A12C61B36B7F785"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+		}
+		{
+			title: "Defeat &eThe Returning Knight"
+			x: 6.5d
+			y: -6.0d
+			subtitle: "Check out Marium's Soulslike Weaponry Mod for more Info"
+			dependencies: ["3570276AEF733567"]
+			dependency_requirement: "one_completed"
+			id: "3596033B80137A70"
+			tasks: [{
+				id: "2869157ED8640191"
+				type: "kill"
+				title: "Kill the Returning Knight"
+				icon: {
+					id: "soulsweapons:nightfall"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "soulsweapons:returning_knight"
+				value: 1L
+			}]
+			rewards: [{
+				id: "58714633249911CF"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+		}
+		{
+			title: "Craft an &dOld Moon Altar"
+			x: 6.5d
+			y: -4.5d
+			subtitle: "Summons &eThe Returning Knight&r when right clicked with a &bLost Soul."
+			id: "1DACA1DF3AD232B4"
+			tasks: [{
+				id: "5A7C450361A98508"
+				type: "item"
+				item: "soulsweapons:altar_block"
+			}]
+			rewards: [{
+				id: "012E6A3E9F3887DE"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+	quest_links: [ ]
+}

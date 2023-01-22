@@ -1,0 +1,415 @@
+{
+	id: "3E34934F09B08365"
+	group: ""
+	order_index: 0
+	filename: "welcome_to_bmc_fabric_1192"
+	title: " &dTutorial"
+	icon: {
+		id: "ftbquests:custom_icon"
+		Count: 1b
+		tag: {
+			Icon: "patchouli:textures/items/book_blue.png"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "&eWelcome to Medieval MC!"
+			icon: {
+				id: "minecraft:book"
+				Count: 1b
+				tag: {
+					Enchantments: [{
+						id: "aqua_affinity"
+						lvl: 1
+					}]
+				}
+			}
+			x: 1.5d
+			y: 2.0d
+			subtitle: "To start the tutorial, click on this quest and read the description."
+			description: [
+				"This tutorial will guide you through some basic features. Don't worry, it won't take &otoo &rlong!"
+				""
+				"To start, click the checkmark under the word \"&9Tasks&r\" and then claim the &6Quest Reward&r. New quests will start to appear!"
+				""
+				"If new quests do not start appearing, try rejoining your world."
+			]
+			size: 2.0d
+			id: "6A52090D6BC064D7"
+			tasks: [{
+				id: "1B0800437C68C43A"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+			rewards: [{
+				id: "57BF2196D5016192"
+				type: "item"
+				item: "minecraft:bread"
+				count: 3
+			}]
+		}
+		{
+			title: "&2Inventory"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftbteams:textures/teams.png"
+				}
+			}
+			x: 0.5d
+			y: 0.0d
+			subtitle: "Read my description!"
+			description: [
+				"The icon in the top left of the screen is the &aFTB Teams &rmenu. This allows you to add other players to your team."
+				""
+				"On the right of the &aFTB Teams &ricon is the &6Quest Book &ricon, which allows you to access the &6Quest Book &rat any time."
+				""
+				"To the right of the &6Quest Book &ris the &9FTB Chunks &rmap. By clicking a chunk once, that chunk will be claimed, preventing players and other mobs from destroying it. If you shift click a chaimed chunk, it will become forceloaded. In forceloaded chunks, crops, furnaces, and much more will behave as if a player was present."
+				""
+				"At the top of your inventory is a Book icon. By clicking this book, you can review and upgrade &9Attributes&r. Skill points are gained by obtaining &aExperience Points&r. "
+				""
+				"When you hover over your armor slots, your &8Trinket &rslots will become visible. Some items, such as Elytras and Totems can be equipped here. Slots with an eye icon at the top are cosmetic slots, which are purely visual."
+				""
+				"Try equipping the &cCharm of Life &rfrom the quest reward in your Necklace slot!"
+			]
+			dependencies: ["6A52090D6BC064D7"]
+			invisible: true
+			invisible_until_tasks: 1
+			id: "2958CA7FA6FD3E4F"
+			tasks: [
+				{
+					id: "0DD3C1416FC34FA1"
+					type: "checkmark"
+					title: "Inventory"
+				}
+				{
+					id: "380A99374727D6D8"
+					type: "item"
+					disable_toast: true
+					item: "minecraft:bread"
+				}
+			]
+			rewards: [{
+				id: "649C9C6CB3EB241E"
+				type: "item"
+				item: "twilightforest:charm_of_life_1"
+			}]
+		}
+		{
+			title: "&6Quests"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftbquests:textures/item/book.png"
+				}
+			}
+			x: 1.5d
+			y: 0.0d
+			subtitle: "Read my description!"
+			description: [
+				"&9Tasks &rare things that need to be done to complete a quest. If a task is an item, clicking on it will show its recipe."
+				""
+				"&6Rewards &rare what you get after completing all &9Tasks&r. Click to claim."
+				""
+				"The pin icon at the top right will pin a quest to your screen."
+			]
+			dependencies: ["6A52090D6BC064D7"]
+			invisible: true
+			invisible_until_tasks: 1
+			id: "175099CF5696829E"
+			tasks: [
+				{
+					id: "21428FE253D34D4E"
+					type: "checkmark"
+					title: "Quests"
+				}
+				{
+					id: "08EDA62F0B406C49"
+					type: "item"
+					disable_toast: true
+					item: "minecraft:bread"
+				}
+			]
+			rewards: [{
+				id: "34B145F40A6C1F3B"
+				type: "item"
+				item: "minecraft:torch"
+				count: 3
+			}]
+		}
+		{
+			title: "&9Important Controls"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftblibrary:textures/icons/player.png"
+				}
+			}
+			x: 2.5d
+			y: 0.0d
+			subtitle: "Read my description!"
+			description: [
+				"Press &bR &rwhile hovering over an item to view its Recipe"
+				""
+				"Press &bU &rwhile hovering over an item to view its Uses"
+				""
+				"Press &bLeft Alt &rto Crawl"
+				""
+				"Press &bX &rto Roll"
+				""
+				"Press &bRight Click &rwhile crouching to pick up a block or mob. Two mobs can be stacked."
+				""
+				"Press &bI &rto open and configure the Emote Wheel"
+				""
+				"Hold &b~ &rwhile using a tool with the Vein Mining enchant to activate Vein Mining"
+				""
+				"Press &bH &rto Activate Origin Ability"
+				""
+				"Press &bB &rwhile a Backpack is on your Back Slot to open it"
+				""
+				"Press &bC &rto Zoom with a Spyglass in your inventory"
+				""
+				"Press &bM &rto open the World Map"
+				""
+				"Press &bO &rto view Origin Information"
+				""
+				"Press &b, &rto activate Secondary Origin Ability, if you have one"
+				""
+				"Press &bR &rto Ping"
+				""
+				"Press &bF7 &rto configure Pings"
+				""
+				"Press &bF8 &rto configure footsteps"
+			]
+			dependencies: ["6A52090D6BC064D7"]
+			invisible: true
+			invisible_until_tasks: 1
+			id: "2165E80C52C79992"
+			tasks: [
+				{
+					id: "6A64112F92690241"
+					type: "checkmark"
+					title: "Click me!"
+				}
+				{
+					id: "2B23CADA52D45FA0"
+					type: "item"
+					disable_toast: true
+					item: "minecraft:bread"
+				}
+			]
+			rewards: [{
+				id: "12E76AA93DDDF5A6"
+				type: "item"
+				item: {
+					id: "arcanus:initiate_wand"
+					Count: 1b
+					tag: {
+						arcanus: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "&bRoughly Enough Items (REI)"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "forge:textures/gui/search.png"
+				}
+			}
+			x: 0.5d
+			y: -1.5d
+			subtitle: "Read my description!"
+			description: [
+				"At the bottom of the inventory, you may have noticed a search bar."
+				"This is the &dRoughly Enough Items&r, or &dREI&r, search bar. "
+				"If you type Wood, for example, the &dREI &ritem list at the right of the screen will show all items with Wood in the name."
+				""
+				"Adding a @ at the start of the search query, it will show the items from a specific mod, for example @Adorn"
+				""
+				"Adding a # at the start of the search query, it will show all items with a specific tag, for example #logs"
+				""
+				"To favorite an item, drag it from &dREI &ritem list to the left side of the screen."
+			]
+			dependencies: ["2958CA7FA6FD3E4F"]
+			hide: true
+			id: "139DAA6E8CF4267A"
+			tasks: [{
+				id: "74C85348A8B837EB"
+				type: "checkmark"
+				title: "Roughly Enough Items"
+			}]
+			rewards: [{
+				id: "1AE5746200C26691"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "&5Professions"
+			icon: {
+				id: "vinery:straw_hat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: -1.5d
+			subtitle: "Read my description!"
+			description: [
+				"To view the &5Professions &rscreen, press &bP&r."
+				""
+				"Once a &5profession &rreaches &aLevel 100 &ryou will start to unlock small perks and stat boosts."
+				""
+				"You can level up &5professions &rby doing the corresponding activity. For example, the Trading &5profession &rcan be leveled up by trading with Villagers."
+				""
+				"In &eMedieval MC&r, all &5professions &rare unlocked and joined by default. "
+			]
+			dependencies: ["2165E80C52C79992"]
+			hide: true
+			id: "4B757CA4C6D4A6EB"
+			tasks: [{
+				id: "419AE170FE0B6A4B"
+				type: "checkmark"
+				title: "Professions"
+			}]
+			rewards: [{
+				id: "3C8CEF0A99595A10"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftblibrary:textures/icons/check.png"
+				}
+			}
+			x: 1.5d
+			y: -3.0d
+			subtitle: "Read my description!"
+			description: [
+				"The tutorial is now &afinished&r! "
+				""
+				"To view the rest of the quests, put your cursor to the left of the screen and expand the &6Quest Groups&r. "
+				""
+				"Feel free to join our &bDiscord &rfor any other questions you may have: https://lunapixel.studio/discord"
+			]
+			dependencies: ["41A362D23E3CC2C6"]
+			hide: true
+			id: "6A4CB4700F0082C6"
+			tasks: [{
+				id: "3B2CC7DEE30E3AB8"
+				type: "checkmark"
+				title: "&aTutorial Complete!"
+			}]
+			rewards: [
+				{
+					id: "0CEA429A4EFA92FE"
+					type: "item"
+					item: "archon:grimoire"
+				}
+				{
+					id: "2808585D0EE745EB"
+					type: "item"
+					item: "adventurez:handbook"
+				}
+				{
+					id: "18A2D4062EBC2799"
+					type: "item"
+					item: "dehydration:handbook"
+				}
+				{
+					id: "7EA84248D041EEF2"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "vinery:vinery"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "&dRealism"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "dehydration:textures/mob_effect/thirst_effect.png"
+				}
+			}
+			x: 1.5d
+			y: -1.5d
+			subtitle: "Read my description!"
+			description: [
+				"&eMedieval MC &rincludes several realism mechanics. The two mods which control these mechanics are &6EnvironmentZ &rand &bDehydration&r."
+				""
+				"If you are playing on a Singleplayer world, both of these mods can safely be deleted from the Mods folder in the modpack files. You can also open their configs through the ingame Mods button."
+				""
+				"When you are too &cwarm&r, you will start to &4overheat&r. This will put a foggy overlay over your screen. This can be disabled in the &6EnvironmentZ &rconfig."
+				""
+				"There is a Quest Chapter dedicated to these two mechanics if you would like to learn more."
+				""
+				"&eMedieval MC &ralso includes the &6Fabric Seasons &rmod. Each season lasts 28 ingame days. Seasons affect the growth of crops. Craft a Calendar to check what season it is."
+			]
+			dependencies: [
+				"139DAA6E8CF4267A"
+				"4B757CA4C6D4A6EB"
+			]
+			hide: true
+			id: "41A362D23E3CC2C6"
+			tasks: [{
+				id: "2EB663E422AEB389"
+				type: "checkmark"
+				title: "Realism"
+			}]
+			rewards: [{
+				id: "2FDE7266581037B7"
+				type: "item"
+				item: "dehydration:leather_flask"
+			}]
+		}
+		{
+			title: "&cTips \\& Tricks"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftblibrary:textures/icons/diamond.png"
+				}
+			}
+			x: 1.5d
+			y: -4.210714285714289d
+			subtitle: "Read my description!"
+			description: [
+				"&fItems can be trashed by dragging them on top of &4lava buckets &fand then right clicking!"
+				""
+				"Items can be reforged in an &7Anvil&r. The item needs to be full durability, and you need &dAmethyst Shards&r."
+			]
+			hide_dependency_lines: true
+			dependencies: ["6A4CB4700F0082C6"]
+			hide: true
+			size: 1.2d
+			id: "1272952B43DFA218"
+			tasks: [{
+				id: "64F70B833581A586"
+				type: "checkmark"
+				title: "&cTips \\& Tricks"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
